@@ -1,0 +1,110 @@
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
+    padding: 0;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    /* flex-direction: column; */
+}
+
+.logo {
+    width: 50%;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: center; */
+}
+
+.logo a {
+    color: #212529;
+    cursor: pointer;
+}
+
+.logo::after {
+    content: ".";
+    color: #CE1212;
+}
+
+.links {
+    width: 40%;
+}
+/* .links ul {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+} */
+.links a {
+    color: #7f7f90;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.links a.Home {
+    color: #212529;
+}
+
+.links a:hover {
+    color: #212529;
+}
+
+.links a:hover::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    border: #CE1212 solid 2px;
+    border-radius: 5px;
+    height: 2px;
+    width: 50%;
+    position: absolute;
+    left: 17px;
+    bottom: 3px;
+}
+
+.links a.Home::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    border: #CE1212 solid 2px;
+    border-radius: 5px;
+    height: 2px;
+    width: 75%;
+    position: absolute;
+    left: 6px;
+    bottom: 0px;
+}
+
+.moon {
+    margin-left: auto;
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: center; */
+}
+
+.moon a {
+    color: #212529;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}

@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!---------------------------start Nav ------------------------------>
+
+    <div class="nav">
+
+        <div class="container">
+
+            <div class="logo">
+                <a href="#">
+                    Mealify
+                </a>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li><a class="Home" href="#">Home</a></li>
+                    <li><a class="Chefs" href="#">Chefs</a></li>
+                    <li><a class="Gallery" href="#">Gallery</a></li>
+                    <li><a class="Contact" href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="moon">
+                <a href="#">
+                    <i class="fa-solid fa-moon"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!---------------------------end Nav -------------------------------->
+
+
+    <!---------------------------start header -------------------------------->
+
+    <div class="header">
+        <div class="container">
+            <div class="text">
+                <h2>Enjoy Your Healthy</h2>
+                <h2>Delicious Food</h2>
+                <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum
+                    quaerat.</p>
+                <div class="Buttons">
+                    <div class="book"><a href="#">Book a Table</a></div>
+                    <div class="Video"><a href="#"><i class="fa-solid fa-play"></i>Watch a Video</a></div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/hero-img.png" alt="Food">
+            </div>
+        </div>
+
+    </div>
+
+    <!---------------------------end header ---------------------------------->
+
+
+    <!---------------------------start CHEFS ---------------------------------->
+
+    <div class="CHEFS">
+
+        <div>
+
+        </div>
+
+    </div>
+
+    <!---------------------------end CHEFS ---------------------------------->
+
+</body>
+
+</html>
+====================================
+css
+====================================
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    background-color: #D85454;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1D1D1D;
+    border-radius: 10px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
+    padding: 0;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 100%;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.logo a {
+    color: #212529;
+    cursor: pointer;
+}
+
+.logo::after {
+    content: ".";
+    color: #CE1212;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.links ul {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.links a {
+    color: #7f7f90;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.links a.Home {
+    color: #212529;
+}
+
+.links a:hover {
+    color: #212529;
+}
+
+.links a:hover::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    border: #CE1212 solid 2px;
+    border-radius: 5px;
+    height: 2px;
+    width: 50%;
+    position: absolute;
+    left: 17px;
+    bottom: 3px;
+}
+
+.links a.Home::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    border: #CE1212 solid 2px;
+    border-radius: 5px;
+    height: 2px;
+    width: 75%;
+    position: absolute;
+    left: 6px;
+    bottom: 0px;
+}
+
+.moon {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.moon a {
+    color: #212529;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header {
+    background-color: #f1f1f1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 20px;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    font-style: normal;
+    color: #37373F;
+}
+
+.text p {
+    margin-block: 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4f4f5a;
+}
+
+.Buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book,
+.Video {
+    padding: 10px 20px;
+    background-color: #E61414;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.Video {
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    padding-left: 2rem;
+}
+
+.book a {
+    color: white;
+    text-decoration: none;
+}
+
+.Video a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #212529;
+}
+
+.Video i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.Video::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.item {
+    width: 100%;
+    padding: 20px;
+}
+
+.item img {
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(-5px, 0);
+    }
+
+    50% {
+        transform: translate(5px, 0);
+    }
+
+    75% {
+        transform: translate(-5px, 0);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.item img:hover {
+    animation: shake 0.5s infinite;
+}
+
+
+@media screen and (min-width: 768px) {
+    .nav {
+        padding: 10px 30px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .links {
+        gap: 15px;
+    }
+
+    .links a {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .header {
+        padding: 80px 30px;
+        flex-direction: row;
+    }
+
+    .text {
+        width: 45%;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .Buttons {
+        flex-direction: row;
+    }
+
+    .item {
+        width: 45%;
+    }
+    .links a:hover::after {
+        content: ""; 
+        width: 70%;
+        position: absolute;
+        left: 5px;
+        bottom: 0px; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav {
+        padding: 0 50px;
+    }
+
+    .header {
+        padding: 100px 100px;
+    }
+
+    .logo {
+        font-size: 25px;
+        font-weight: 500;
+        font-family: "Inter", sans-serif;
+    }
+
+    .links ul {
+        display: flex;
+        gap: 20px;
+        text-align: center;
+        flex-direction: row;
+    }
+
+    .moon {
+        font-size: 25px;
+    }
+    .links a.Home::after {
+        content: "";
+        position: absolute;
+        width: 110%;
+        left: 0px;
+        bottom: 0px;
+    }
+    .links a:hover::after {
+        content: ""; 
+        width: 70%;
+        position: absolute;
+        left: 5px;
+        bottom: 0px; 
+    }
+
+}
+
+/* *,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+::selection {
+    background-color: #D85454;
+    color: white;
+}
+::-webkit-scrollbar {
+    width: 12px; 
+}
+::-webkit-scrollbar-thumb {
+    background: #1D1D1D;
+    border-radius: 10px; 
+}
+.nav {
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    background-color: white;
+    padding: 25px 100px;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.5));
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0 20px;
+    scroll-padding: 20px;
+}
+
+.logo {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+
+.logo a {
+    color: #212529;
+    cursor: pointer;
+}
+
+.logo::after {
+    content: ".";
+    color: #CE1212;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.links ul {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+.links a {
+    color: #7f7f90;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+}
+.links a.Home {
+    color: #212529;
+}
+.links a:hover{
+    color: #212529; 
+}
+.links a:hover::after {
+    content: ""; 
+    display: block; 
+    margin-top: 5px; 
+    border: #CE1212 solid 2px; 
+    border-radius: 5px; 
+    height: 2px;
+    width: 70%;
+    position: absolute;
+    left: 12px;
+    bottom: 3px; 
+}
+.links a.Home::after{
+    content: "";
+    display: block;
+    margin-top: 5px;
+    border: #CE1212 solid 2px;
+    border-radius: 5px;
+    height: 2px;
+    width: 107%;
+    position: absolute;
+    left: 18px;
+    bottom: 23px;
+}
+.moon a {
+    color: #212529;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 500;
+}
+.header {
+    background-color: #f1f1f1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 100px;
+}
+
+.text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 600;
+    font-size: 4.0625rem;
+    font-style: normal;
+    color: #37373F;
+}
+
+.text p {
+    margin-block: 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4f4f5a;
+}
+
+.Buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.book,
+.Video {
+    padding: 10px 20px;
+    background-color: #E61414;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.Video {
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    padding-left: 3rem;
+}
+
+.book a {
+    color: white;
+    text-decoration: none;
+}
+
+.Video a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #212529;
+}
+
+.Video i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.Video::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.item {
+    width: 45%;
+    padding: 50px;
+}
+
+.item img {
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.5));
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(-5px, 0);
+    }
+
+    50% {
+        transform: translate(5px, 0);
+    }
+
+    75% {
+        transform: translate(-5px, 0);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.item img:hover {
+    animation: shake 0.5s infinite;
+} */
